@@ -1,0 +1,291 @@
+body {
+    background-color: #E6E6E6;
+    color: #101010;
+    margin: 0;
+    padding: 0;
+    overscroll-behavior: none;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+
+
+/* full page style */
+.container {
+    background-color: rgb(248, 249, 250);
+    ;
+    font-family: system-ui, sans-serif;
+}
+
+/* navarea styles */
+.nav-area {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 60px;
+}
+
+.navbar ul li {
+    display: inline;
+    text-decoration: none;
+    height: 25px;
+    width: 200px;
+    padding: 5px 20px;
+
+}
+
+/* Nav-container styles */
+
+.nav-menu {
+    background-image: url("images/Circle design.svg");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    display: flex;
+    justify-content: center;
+    margin-right: 80px;
+    padding-top: 80px;
+}
+
+.half-width {
+    width: 500px;
+}
+
+.lorem-text {
+    font-size: 25px;
+    text-align: justify;
+}
+
+.photo-graphy img {
+    margin-left: 80px;
+}
+
+.prebook-button {
+    font-size: 20px;
+    background-color: rgb(240, 73, 95);
+    border-radius: 5px;
+    padding: 5px 10px;
+    border: none;
+
+}
+
+.prebook-button a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Webpage name styles */
+.web-image {
+    margin-top: 60px;
+    margin-left: 220px;
+}
+
+.webpage-names {
+    height: 80px;
+    width: 800px;
+    border-top: 2px solid lightgrey;
+    border-bottom: 2px solid lightgrey;
+
+}
+
+.webpage-names img {
+    padding: 15px 10px 0px 10px;
+}
+
+/* Popular collection styles */
+.popular-collection {
+    margin-top: 90px;
+}
+
+.popular-collection .pop-text {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.Collections {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 20px 90px;
+}
+
+.product {
+    margin: 20px;
+    box-shadow: 8px 8px 8px 8px rgb(230, 224, 224);
+    border-radius: 8px;
+    border: 15px solid white;
+}
+
+.product p {
+    font-size: 15px;
+}
+
+.see-more {
+    margin-left: 1100px;
+    color: rgb(240, 73, 95);
+}
+
+/* Feature Product styles */
+.feature-products {
+    margin: 80px 0px;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.feature {
+    width: 300px;
+
+}
+
+.details {
+    width: 600px;
+    height: 100px;
+}
+
+/* Footer Styles */
+
+.footer-content {
+    background-color: #242222;
+    color: white;
+    width: 100%;
+}
+
+.footer-text {
+    height: 150px;
+    width: 270px;
+    margin-left: 450px;
+    padding: 40px 0px 20px 0px;
+    text-align: center;
+}
+
+.footer-icon i {
+    padding: 0px 5px;
+}
+
+/* Styles for Mobile Device */
+
+@media screen and (max-width:576px) {
+
+    /* Full page styles  */
+    body {
+        overscroll-behavior: none;
+    }
+
+    /* navarea styles */
+    .nav-area h2 {
+        padding-left: 20px;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .nav-area {
+        margin-bottom: 20px;
+    }
+
+    /* Nav-container styles */
+    .nav-menu {
+        flex-direction: column-reverse;
+        background-image: url("images/Circle design.svg");
+        background-repeat: no-repeat;
+        background-position: top right;
+        background-size: 80%;
+        padding-top: 40px;
+        padding-right: 50px;
+    }
+
+    .photo-graphy img {
+        width: 50%;
+    }
+
+    .half-width p {
+        width: 380px;
+        text-align: center;
+    }
+
+    .half-width h1 {
+        width: 350px;
+        text-align: center;
+        padding-left: 15px;
+    }
+
+    .prebook-button {
+        margin-left: 20%;
+    }
+
+    /* Webpage name styles */
+    .web-image {
+        margin-top: 60px;
+        margin-left: 5%;
+        border: none;
+    }
+
+    .webpage-names {
+        height: 130px;
+        width: 400px;
+        border-top: none;
+        border-bottom: none;
+        align-items: center;
+    }
+
+    .webpage-names img {
+        width: 60px;
+    }
+
+    .image-space {
+        padding-left: 10%;
+    }
+
+    /* Popular collection styles */
+
+    .Collections {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin: 1%;
+    }
+
+    .see-more {
+        margin-left: 70%;
+        color: rgb(240, 73, 95);
+    }
+
+    /* Feature Product styles */
+    .feature-products {
+        flex-direction: column-reverse;
+        height: 500px;
+        margin-bottom: 120px;
+    }
+
+    .details {
+        height: 300px;
+        width: 350px;
+        text-align: justify;
+        margin-left: 2.5%;
+        margin-bottom: 40px;
+    }
+
+    .details h1 {
+        text-align: center;
+    }
+
+    .details button {
+        margin-left: 32%;
+    }
+
+    .image img {
+        width: 320px;
+        padding-left: 9%;
+    }
+
+    /* Footer Styles */
+    .footer-text {
+        height: 150px;
+        width: 270px;
+        margin-left: 14%;
+        padding: 40px 0px 70px 0px;
+        text-align: center;
+        font-size: 15px;
+    }
+}
